@@ -1,255 +1,306 @@
-```html
+
 <!DOCTYPE html>
 <html>
 <head>
     <title>Cyber Fraud - Cyber Fraud Awareness</title>
 
     <style>
-        body{
-            margin:0;
-            font-family:Arial, Helvetica, sans-serif;
-            background-image:url('https://cdn.siasat.com/wp-content/uploads/2023/12/Untitled-design-2023-12-27T184334.857.jpg');
-            background-repeat:no-repeat;
-            background-size:cover;
-            background-attachment:fixed;
+        body {
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            background-image: url('https://cdn.siasat.com/wp-content/uploads/2023/12/Untitled-design-2023-12-27T184334.857.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-attachment: fixed;
         }
 
         /* Navigation Bar */
-        nav{
-            background-color:#f2f2f2;
-            padding:10px 20px;
+        nav {
+            background-color: #f2f2f2;
+            padding: 10px 20px;
         }
 
-        .logo-container{
-            display:flex;
-            align-items:center;
+        .logo-container {
+            display: flex;
+            align-items: center;
         }
 
-        .site-logo{
-            width:180px;
-            height:100px;
-            object-fit:contain;
-            margin-right:10px;
+        .site-logo {
+            width: 180px;
+            height: 100px;
+            object-fit: contain;
+            margin-right: 10px;
         }
 
-        .header-nav{
-            font-size:30px;
-            font-weight:bold;
-            color:#003366;
+        .header-nav {
+            font-size: 30px;
+            font-weight: bold;
+            color: #003366;
         }
 
-        .nav-links{
-            margin-top:10px;
+        .nav-links {
+            margin-top: 10px;
         }
 
-        .nav-links a{
-            text-decoration:none;
-            color:black;
-            margin-right:20px;
-            font-weight:bold;
-            font-size:20px;
+        .nav-links a {
+            text-decoration: none;
+            color: black;
+            margin-right: 20px;
+            font-weight: bold;
+            font-size: 20px;
         }
 
-        .nav-links a:hover{
-            color:blue;
+        .nav-links a:hover {
+            color: blue;
         }
 
         /* Content */
-
-        .container{
-            width:85%;
-            margin:30px auto;
-            background:rgba(255,255,255,0.9);
-            padding:30px;
-            border-radius:10px;
+        .container {
+            width: 85%;
+            margin: 30px auto;
+            background: rgba(255,255,255,0.9);
+            padding: 30px;
+            border-radius: 10px;
         }
 
-        h1{
-            color:#003366;
-            text-align:center;
+        h1 {
+            color: #003366;
+            text-align: center;
         }
 
-        h2{
-            color:#0059b3;
-            margin-top:25px;
+        h2 {
+            color: #0059b3;
+            margin-top: 25px;
         }
 
-        p{
-            font-size:20px;
-            line-height:1.8;
-            text-align:justify;
+        p {
+            font-size: 20px;
+            line-height: 1.8;
+            text-align: justify;
         }
 
-        ul{
-            font-size:19px;
-            line-height:2;
+        ul {
+            font-size: 19px;
+            line-height: 2;
+        }
+
+        /* Images */
+        .content-img {
+            display: block;
+            width: 500px;
+            max-width: 100%;
+            height: auto;
+            margin: 20px auto;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+        }
+
+        .img-caption {
+            text-align: center;
+            font-size: 16px;
+            font-style: italic;
+            color: #444;
+            margin-top: -10px;
         }
 
         /* Footer */
-
-        footer{
-            background-color:whitesmoke;
-            color:black;
-            text-align:center;
-            padding:15px;
-            margin-top:30px;
+        footer {
+            background-color: whitesmoke;
+            color: black;
+            text-align: center;
+            padding: 15px;
+            margin-top: 30px;
         }
 
-        footer p{
-            margin:5px;
+        footer p {
+            margin: 5px;
         }
 
-        footer a{
-            color:chocolate;
-            text-decoration:none;
-            margin:0 8px;
-            font-size:18px;
+        footer a {
+            color: chocolate;
+            text-decoration: none;
+            margin: 0 8px;
+            font-size: 18px;
         }
 
-        footer a:hover{
-            color:blueviolet;
+        footer a:hover {
+            color: blueviolet;
         }
 
     </style>
-
 </head>
 
 <body>
 
+<!-- Navigation Bar -->
 <nav>
 
-<div class="logo-container">
-    <img src="logo.png" alt="Logo" class="site-logo">
-    <span class="header-nav">Cyber Fraud Awareness</span>
-</div>
+    <div class="logo-container">
+        <img src="logo.png" alt="Website Logo" class="site-logo">
+        <span class="header-nav">
+            Cybercrimes and CyberFrauds Awareness
+        </span>
+    </div>
 
-<div class="nav-links">
-    <a href="home.html">Home</a>
-    <a href="about.html">About Us</a>
-    <a href="cybercrime.html">Cybercrime</a>
-    <a href="cyberfraud.html">Cyberfraud</a>
-    <a href="commonattacks.html">Common Attacks</a>
-    <a href="resources.html">Resources</a>
-    <a href="prevention.html">Prevention</a>
-    <a href="contact.html">Contact Us</a>
-</div>
+    <div class="nav-links">
+        <a href="home.html">Home</a>
+        <a href="about.html">About Us</a>
+        <a href="cybercrime.html">Cybercrime</a>
+        <a href="cyberfraud.html">Cyberfraud</a>
+        <a href="commonattacks.html">Common Attacks</a>
+        <a href="resources.html">Resources</a>
+        <a href="prevention.html">Prevention</a>
+        <a href="contact.html">Contact Us</a>
+    </div>
 
 </nav>
 
+<!-- Main Content -->
 <div class="container">
 
-<h1>Cyber Fraud</h1>
+    <h1>Cyber Fraud</h1>
 
-<h2>What is Cyber Fraud?</h2>
+    <h2>What is Cyber Fraud?</h2>
 
-<p>
-Cyber fraud is a type of cybercrime in which criminals use computers,
-mobile devices, or the internet to deceive individuals or organizations
-for financial gain or to steal confidential information. Fraudsters
-often impersonate trusted organizations or create fake websites,
-emails, and messages to trick victims into revealing sensitive data.
-</p>
+    <p>
+        Cyber fraud is a type of cybercrime in which criminals use computers,
+        mobile devices, or the internet to deceive individuals or organizations
+        for financial gain or to steal confidential information. Fraudsters
+        often impersonate trusted organizations or create fake websites,
+        emails, and messages to trick victims into revealing sensitive data.
+    </p>
 
-<h2>Types of Cyber Fraud</h2>
+    <!-- Image 5 -->
+    <img src="image5.jpg"
+         alt="Fraud alert on a mobile phone showing a blocked credit card"
+         class="content-img">
 
-<ul>
-    <li><strong>Phishing:</strong> Fake emails or websites used to steal usernames, passwords, and banking details.</li>
+    <p class="img-caption">
+        A fake fraud alert message on a mobile phone.
+    </p>
 
-    <li><strong>Banking Fraud:</strong> Unauthorized access to bank accounts using stolen credentials or fake banking apps.</li>
 
-    <li><strong>Credit Card Fraud:</strong> Illegal use of debit or credit card information for unauthorized purchases.</li>
+    <h2>Types of Cyber Fraud</h2>
 
-    <li><strong>Online Shopping Fraud:</strong> Fake e-commerce websites that collect payments without delivering products.</li>
+    <ul>
+        <li><strong>Phishing:</strong> Fake emails or websites used to steal usernames, passwords, and banking details.</li>
 
-    <li><strong>Identity Theft:</strong> Stealing personal information to open accounts or commit crimes in another person's name.</li>
+        <li><strong>Banking Fraud:</strong> Unauthorized access to bank accounts using stolen credentials or fake banking apps.</li>
 
-    <li><strong>Investment Scams:</strong> Fake investment schemes promising unrealistic profits.</li>
+        <li><strong>Credit Card Fraud:</strong> Illegal use of debit or credit card information for unauthorized purchases.</li>
 
-    <li><strong>Job Scams:</strong> Fraudsters offer fake jobs and demand registration or processing fees.</li>
+        <li><strong>Online Shopping Fraud:</strong> Fake e-commerce websites that collect payments without delivering products.</li>
 
-    <li><strong>Lottery and Prize Scams:</strong> Victims receive fake messages claiming they have won prizes and are asked to pay fees.</li>
+        <li><strong>Identity Theft:</strong> Stealing personal information to open accounts or commit crimes in another person's name.</li>
 
-    <li><strong>Romance Scams:</strong> Criminals build online relationships to gain trust before asking for money.</li>
-</ul>
+        <li><strong>Investment Scams:</strong> Fake investment schemes promising unrealistic profits.</li>
 
-<h2>Techniques Used by Cyber Fraudsters</h2>
+        <li><strong>Job Scams:</strong> Fraudsters offer fake jobs and demand registration or processing fees.</li>
 
-<ul>
-    <li>Social Engineering</li>
-    <li>Phishing Emails</li>
-    <li>SMS Phishing (Smishing)</li>
-    <li>Voice Phishing (Vishing)</li>
-    <li>Fake Mobile Applications</li>
-    <li>Fake Customer Care Numbers</li>
-    <li>Malicious Links and Attachments</li>
-    <li>QR Code Scams</li>
-    <li>Password Guessing and Credential Theft</li>
-    <li>Fake Social Media Profiles</li>
-</ul>
+        <li><strong>Lottery and Prize Scams:</strong> Victims receive fake messages claiming they have won prizes and are asked to pay fees.</li>
 
-<h2>Case Studies</h2>
+        <li><strong>Romance Scams:</strong> Criminals build online relationships to gain trust before asking for money.</li>
+    </ul>
 
-<h3>Case Study 1: Banking OTP Scam</h3>
+    <!-- Image 4 -->
+    <img src="image4.jpg"
+         alt="Warning sign showing fake online shopping offers"
+         class="content-img">
 
-<p>
-A victim received a phone call from someone pretending to be a bank
-employee. The fraudster convinced the victim to share a One-Time Password
-(OTP). Using this OTP, the attacker transferred money from the victim's
-bank account.
-</p>
+    <p class="img-caption">
+        Be careful of "free" gifts and offers that look too good to be true.
+    </p>
 
-<h3>Case Study 2: Fake Online Shopping Website</h3>
 
-<p>
-A customer purchased an expensive smartphone from a fake shopping
-website offering huge discounts. After payment, the website disappeared,
-and the customer never received the product.
-</p>
+    <h2>Techniques Used by Cyber Fraudsters</h2>
 
-<h3>Case Study 3: Phishing Email Attack</h3>
+    <ul>
+        <li>Social Engineering</li>
+        <li>Phishing Emails</li>
+        <li>SMS Phishing (Smishing)</li>
+        <li>Voice Phishing (Vishing)</li>
+        <li>Fake Mobile Applications</li>
+        <li>Fake Customer Care Numbers</li>
+        <li>Malicious Links and Attachments</li>
+        <li>QR Code Scams</li>
+        <li>Password Guessing and Credential Theft</li>
+        <li>Fake Social Media Profiles</li>
+    </ul>
 
-<p>
-An employee received an email that appeared to be from the company's
-IT department requesting a password reset. After entering login
-credentials on a fake webpage, attackers gained access to the company's
-network.
-</p>
+    <!-- Image 6 -->
+    <img src="image6.jpg"
+         alt="Fake computer technical support warning"
+         class="content-img">
 
-<h2>How to Stay Safe</h2>
+    <p class="img-caption">
+        A fake tech-support pop-up urging victims to call a fraudulent helpline.
+    </p>
 
-<ul>
-    <li>Never share OTPs or passwords.</li>
-    <li>Verify website URLs before making payments.</li>
-    <li>Enable Two-Factor Authentication (2FA).</li>
-    <li>Download apps only from official app stores.</li>
-    <li>Do not click suspicious links or attachments.</li>
-    <li>Use strong and unique passwords.</li>
-    <li>Regularly monitor bank transactions.</li>
-    <li>Keep your devices and antivirus software updated.</li>
-</ul>
+
+    <h2>Case Studies</h2>
+
+    <h3>Case Study 1: Banking OTP Scam</h3>
+
+    <p>
+        A victim received a phone call from someone pretending to be a bank
+        employee. The fraudster convinced the victim to share a One-Time Password
+        (OTP). Using this OTP, the attacker transferred money from the victim's
+        bank account.
+    </p>
+
+    <h3>Case Study 2: Fake Online Shopping Website</h3>
+
+    <p>
+        A customer purchased an expensive smartphone from a fake shopping
+        website offering huge discounts. After payment, the website disappeared,
+        and the customer never received the product.
+    </p>
+
+    <h3>Case Study 3: Phishing Email Attack</h3>
+
+    <p>
+        An employee received an email that appeared to be from the company's
+        IT department requesting a password reset. After entering login
+        credentials on a fake webpage, attackers gained access to the company's
+        network.
+    </p>
+
+
+    <h2>How to Stay Safe</h2>
+
+    <ul>
+        <li>Never share OTPs or passwords.</li>
+        <li>Verify website URLs before making payments.</li>
+        <li>Enable Two-Factor Authentication (2FA).</li>
+        <li>Download apps only from official app stores.</li>
+        <li>Do not click suspicious links or attachments.</li>
+        <li>Use strong and unique passwords.</li>
+        <li>Regularly monitor bank transactions.</li>
+        <li>Keep your devices and antivirus software updated.</li>
+    </ul>
 
 </div>
 
+<!-- Footer -->
 <footer>
 
-<p>&copy; 2026 Cyber Fraud Awareness. All Rights Reserved.</p>
+    <p>&copy; 2026 Cyber Fraud Awareness. All Rights Reserved.</p>
 
-<p>
-Follow us on:
-<a href="https://www.facebook.com" target="_blank">Facebook</a> |
-<a href="https://www.twitter.com" target="_blank">Twitter</a> |
-<a href="https://www.instagram.com" target="_blank">Instagram</a>
-</p>
+    <p>
+        Follow us on:
+        <a href="https://www.facebook.com" target="_blank">Facebook</a> |
+        <a href="https://www.twitter.com" target="_blank">Twitter</a> |
+        <a href="https://www.instagram.com" target="_blank">Instagram</a>
+    </p>
 
-<p>
-Visit Us At:
-<a href="https://www.cyberfraudawareness.com" target="_blank">
-www.cyberfraudawareness.com
-</a>
-</p>
+    <p>
+        Visit Us At:
+        <a href="https://www.cyberfraudawareness.com" target="_blank">
+            www.cyberfraudawareness.com
+        </a>
+    </p>
 
 </footer>
 
 </body>
 </html>
-```
