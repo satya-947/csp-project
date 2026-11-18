@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -17,9 +18,6 @@
         nav{
             background-color:#f2f2f2;
             padding:10px 20px;
-            display:block;
-            justify-content:space-between;
-            align-items:center;
         }
 
         .logo-container{
@@ -38,6 +36,10 @@
             font-size:30px;
             font-weight:bold;
             color:#003366;
+        }
+
+        .nav-links{
+            margin-top:10px;
         }
 
         .nav-links a{
@@ -69,7 +71,7 @@
 
         /* Contact Form */
         .card{
-            background:rgba(0,0,0,0.65);
+            background:rgba(0,0,0,0.75);
             padding:25px;
             margin:20px 0;
             border-radius:10px;
@@ -77,6 +79,7 @@
 
         input, textarea{
             width:100%;
+            box-sizing:border-box;
             padding:12px;
             margin:10px 0;
             border:none;
@@ -84,10 +87,14 @@
             font-size:16px;
         }
 
+        textarea{
+            resize:vertical;
+        }
+
         button{
             background-color:#00ccff;
             border:none;
-            padding:12px 20px;
+            padding:12px 25px;
             font-size:18px;
             font-weight:bold;
             cursor:pointer;
@@ -109,15 +116,18 @@
             font-weight:bold;
         }
 
+        .note{
+            color:#ffcc66;
+            font-size:15px;
+        }
+
         /* Footer */
         footer{
             background-color:whitesmoke;
             color:black;
             text-align:center;
             padding:15px;
-            position:fixed;
-            bottom:0;
-            width:100%;
+            margin-top:30px;
         }
 
         footer a{
@@ -139,11 +149,15 @@
 
     <!-- Navigation -->
     <nav>
+
         <div class="logo-container">
-            <a href="#logo">
+            <a href="home.html">
                 <img src="logo.png" alt="Logo" class="site-logo">
             </a>
-            <span class="header-nav">Cyber Fraud Awareness</span>
+
+            <span class="header-nav">
+                Cybercrimes and CyberFrauds Awareness
+            </span>
         </div>
 
         <div class="nav-links">
@@ -156,6 +170,7 @@
             <a href="prevention.html">Prevention</a>
             <a href="contact.html">Contact Us</a>
         </div>
+
     </nav>
 
     <!-- Heading -->
@@ -165,44 +180,115 @@
 
         <!-- Contact Form -->
         <div class="card">
+
             <h3>📩 Send Us a Message</h3>
 
-            <form>
-                <input type="text" placeholder="Your Name" required>
+            <form
+                action="https://formsubmit.co/YOUR_EMAIL@gmail.com"
+                method="POST">
 
-                <input type="email" placeholder="Your Email" required>
+                <!-- Email Configuration -->
 
-                <input type="text" placeholder="Subject">
+                <input type="hidden" name="_subject"
+                value="New Contact Message - Cyber Fraud Awareness">
 
-                <textarea rows="5" placeholder="Your Message"></textarea>
+                <input type="hidden" name="_template"
+                value="table">
 
-                <button type="submit">Submit</button>
+                <input type="hidden" name="_captcha"
+                value="true">
+
+                <!-- User Details -->
+
+                <input
+                    type="text"
+                    name="Name"
+                    placeholder="Your Name"
+                    required>
+
+                <input
+                    type="email"
+                    name="Email"
+                    placeholder="Your Email"
+                    required>
+
+                <input
+                    type="text"
+                    name="Subject"
+                    placeholder="Subject"
+                    required>
+
+                <textarea
+                    name="Message"
+                    rows="5"
+                    placeholder="Enter Your Message"
+                    required></textarea>
+
+                <p class="note">
+                    Please do not share passwords, OTPs,
+                    or confidential banking information.
+                </p>
+
+                <button type="submit">
+                    Submit Message
+                </button>
+
             </form>
+
         </div>
 
         <!-- Support Information -->
         <div class="card support">
+
             <h3>🛡️ Support Information</h3>
 
-            <p><span class="highlight">Cyber Fraud Helpline:</span> 1930 (India Cyber Crime Helpline)</p>
-            <p><span class="highlight">Email Support:</span> support@cyberfraudawareness.com</p>
-            <p><span class="highlight">Response Time:</span> Within 24–48 hours</p>
+            <p>
+                <span class="highlight">
+                    Cyber Fraud Helpline:
+                </span>
+                1930 (India Cyber Crime Helpline)
+            </p>
 
             <p>
-                If you are facing an urgent cyber fraud issue, immediately contact your bank
-                and report it on the national cybercrime portal.
+                <span class="highlight">
+                    Email Support:
+                </span>
+                Your support email address
             </p>
+
+            <p>
+                <span class="highlight">
+                    Response Time:
+                </span>
+                Within 24–48 hours
+            </p>
+
+            <p>
+                If you are facing an urgent cyber fraud issue,
+                immediately contact your bank and report it
+                on the National Cyber Crime Reporting Portal.
+            </p>
+
+            <p>
+                <a href="https://www.cybercrime.gov.in/"
+                   target="_blank"
+                   style="color:#00e6e6;">
+                   Report Cyber Crime Here
+                </a>
+            </p>
+
         </div>
 
-        <!-- Optional Interactive Features -->
+        <!-- Interactive Features -->
         <div class="card support">
+
             <h3>⚡ Interactive Features</h3>
 
             <ul>
                 <li>Live Chat Support (Coming Soon)</li>
                 <li>Fraud Report Tracker</li>
                 <li>AI-based Scam Detection Tool</li>
-                <li>Emergency Alert Button for quick reporting</li>
+                <li>Emergency Alert for Quick Reporting</li>
             </ul>
 
         </div>
@@ -211,19 +297,32 @@
 
     <!-- Footer -->
     <footer>
-        <p>&copy; 2026 Cyber Fraud Awareness. All Rights Reserved.</p>
+
+        <p>
+            &copy; 2026 Cyber Fraud Awareness.
+            All Rights Reserved.
+        </p>
+
         <p>
             Follow us on:
-            <a href="https://www.facebook.com" target="_blank">Facebook</a> |
-            <a href="https://www.twitter.com" target="_blank">Twitter</a> |
-            <a href="https://www.instagram.com" target="_blank">Instagram</a>
+            <a href="https://www.facebook.com"
+               target="_blank">Facebook</a> |
+
+            <a href="https://www.twitter.com"
+               target="_blank">Twitter</a> |
+
+            <a href="https://www.instagram.com"
+               target="_blank">Instagram</a>
         </p>
+
         <p>
             Visit Us At:
-            <a href="https://www.cyberfraudawareness.com" target="_blank">
-                www.cyberfraudawareness.com
+            <a href="https://www.cybercrime.gov.in/"
+               target="_blank">
+               National Cyber Crime Reporting Portal
             </a>
         </p>
+
     </footer>
 
 </body>
